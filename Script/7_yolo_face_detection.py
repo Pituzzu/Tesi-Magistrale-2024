@@ -2,6 +2,7 @@ import os
 from ultralytics import YOLO
 from PIL import Image
 
+path_day = "dataset_25_09_24"
 # Carica il modello YOLOv8n addestrato per il riconoscimento dei volti
 modello = YOLO("/home/pituzzu/Scrivania/Tesi Magistrale/Package Tesi/yolov8n-face.pt")
 
@@ -25,5 +26,5 @@ def ritaglia_immagini(percorso_cartella):
                         break  # Interrompe il loop dopo il primo ritaglio
                     break  # Interrompe il loop se almeno un volto è stato ritagliato
 
-percorso_cartella = "/home/pituzzu/Scrivania/Tesi Magistrale/Backup_Dataset/4_3_Dataset"
+percorso_cartella = "/home/pituzzu/Scrivania/Tesi Magistrale/"+path_day+"/4_3_Dataset"
 ritaglia_immagini(percorso_cartella)

@@ -1,6 +1,9 @@
 import os
 import shutil
 
+numero_img_per_persona = 20
+path_day = "dataset_25_09_24"
+
 def elimina_cartelle_con_meno_di_10_immagini(percorso_base):
     for root, dirs, files in os.walk(percorso_base):
         for nome_cartella in dirs:
@@ -13,9 +16,9 @@ def elimina_cartelle_con_meno_di_10_immagini(percorso_base):
                     conteggio_immagini += 1
             
             # Se la cartella ha meno di 10 immagini, viene eliminata
-            if conteggio_immagini < 10:
+            if conteggio_immagini < numero_img_per_persona:
                 shutil.rmtree(percorso_cartella)
                 print(f"Cartella '{percorso_cartella}' eliminata, conteneva {conteggio_immagini} immagini.")
 
-percorso_base = "/home/pituzzu/Scrivania/Tesi Magistrale/Backup_Dataset/4_3_Dataset"
+percorso_base = "/home/pituzzu/Scrivania/Tesi Magistrale/"+path_day+"/4_3_Dataset"
 elimina_cartelle_con_meno_di_10_immagini(percorso_base)

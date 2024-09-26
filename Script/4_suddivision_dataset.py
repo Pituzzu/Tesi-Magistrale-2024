@@ -1,8 +1,10 @@
 import os
 import shutil
 
+path_day = "dataset_25_09_24"
+
 # Percorso alla cartella principale e al file di identità
-base_path = "/home/pituzzu/Scrivania/Tesi Magistrale/Backup_Dataset"  # Sostituisci con il percorso della tua cartella Dataset
+base_path = "/home/pituzzu/Scrivania/Tesi Magistrale/"+path_day  # Sostituisci con il percorso della tua cartella Dataset
 images_dir = os.path.join(base_path, "img_align_celeba")
 identities_file = os.path.join(base_path, "/home/pituzzu/Scrivania/Tesi Magistrale/Package Tesi/identity_CelebA.txt")
 

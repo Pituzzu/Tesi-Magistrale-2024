@@ -1,7 +1,7 @@
 import os
 
 # Specifica il percorso della cartella
-cartella = '/home/pituzzu/Scrivania/Tesi Magistrale/Dataset/img_align_celeba'
+cartella = '/home/pituzzu/Scrivania/Tesi Magistrale/dataset_25_09_24/img_align_celeba'
 
 # Ottieni un elenco di tutti i nomi di file e cartelle nella directory
 contenuti = os.listdir(cartella)

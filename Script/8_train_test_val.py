@@ -2,6 +2,9 @@ import os
 import shutil
 import random
 
+
+path_day = "dataset_25_09_24"
+
 def suddividi_dataset(percorso_base, destinazione, perc_train=0.8, perc_test=0.1, perc_val=0.1):
     # Crea le cartelle di destinazione
     train_dir = os.path.join(destinazione, 'train')
@@ -49,8 +52,8 @@ def suddividi_dataset(percorso_base, destinazione, perc_train=0.8, perc_test=0.1
     print("Distribuzione completata.")
 
 # Percorsi principali
-percorso_base = "/home/pituzzu/Scrivania/Tesi Magistrale/Backup_Dataset/Dataset"
-destinazione = "/home/pituzzu/Scrivania/Tesi Magistrale/Backup_Dataset/Dataset_train_test_val"
+percorso_base = "/home/pituzzu/Scrivania/Tesi Magistrale/"+path_day+"/4_3_Dataset"
+destinazione = "/home/pituzzu/Scrivania/Tesi Magistrale/"+path_day+"/Dataset_train_test_val"
 
 # Esegui la suddivisione
 suddividi_dataset(percorso_base, destinazione)

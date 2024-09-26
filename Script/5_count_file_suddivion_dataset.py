@@ -1,4 +1,5 @@
-percorso_cartella = '/home/pituzzu/Scrivania/Tesi Magistrale/Backup_Dataset/4_3_Dataset'
+path_day = "dataset_25_09_24"
+percorso_cartella = '/home/pituzzu/Scrivania/Tesi Magistrale/'+path_day+'/4_3_Dataset'
 
 import os
 
